@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        <div class="displayitems">
+            <input readonly class="display" placeholder="Password" data-passwordDisplay>
+            <button data-copy>
+                <span copiedText></span>
+                <img src="/assets/copy.svg" alt="copy" width="23" height="23">
+            </button>
+        </div>
+
+        <div class="input_Container">
+            <div class="Passlen">
+
+                <p>Password Length</p>
+                <p data-lengthNum>0</p>
+                <!-- slider -->
+                <input type="range" max="20" min="0" step="1" sliderBar class="Slider">
+            </div>
+
+            <!-- checkbox -->
+            <div>
+                <input type="checkbox" id="uppercase">
+                <label for="uppercase">Includes Uppercase letters</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="lowercase">
+                <label for="lowercase">Includes Lowercase letters</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="numbers">
+                <label for="numbers">Includes Numbers </label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="symbols">
+                <label for="symbols">Includes Symbols </label>
+            </div>
+            <!-- Strength Container -->
+             <div>
+                <p>strength</p>
+                <div strength-color></div>
+             </div>
+             <!-- Genrate-Password -->
+             <button class="GeneratePass" Genrate-Pass>Genrate Password</button>
+        </div>
+    </div>
+<script src="myjs.js"></script>
+
+
+
+</body>
+</html>
